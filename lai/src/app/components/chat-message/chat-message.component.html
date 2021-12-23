@@ -1,0 +1,8 @@
+﻿<div class="chat-message">
+  <div class="reply" *ngIf="chatMessage.isReply">
+    reply to <span class="redish">@{{chatMessage.replyDisplayName}}</span>
+  </div>
+  <div class="author" [style.color]="chatMessage.color">{{chatMessage?.displayName}}</div>
+  <div class="message-content" [innerHTML]="messageWithEmotes">
+  </div>
+</div>

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  margin: 0;
+  color: #fafafa;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("assets/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("assets/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("assets/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}

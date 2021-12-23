@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TwitchChatService} from './services/twitch-chat.service';
+import {EventService} from './services/event-service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lai';
+
+  constructor(private twitchService: TwitchChatService) {
+    twitchService.establishConnection();
+  }
+
 }
